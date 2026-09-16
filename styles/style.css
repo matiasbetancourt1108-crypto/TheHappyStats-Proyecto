@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    height: 35px;
+    width: 120px;
+    border: none;
+    font-weight: 900;
+}
+
+
+/*HEADER*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    background-color: #F5CB00;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+}
+.nav a{
+    color: black;
+}
+
+
+/*Seccion 1*/
+
+
+.S1{
+    display: flex;
+    align-items: center;
+    gap: 9%;
+    padding: 4%;
+    padding-bottom: 20%;
+}
+
+h1{
+    font-size: 60px;
+}
+
+.text-S1{
+    padding-right: 10%;
+}
+
+.S1 button{
+    background-color: #F5CB00;
+}
+
+
+
+/*Seccion 2*/
+
+.S2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    background-color: #E6E6E6;
+    padding: 4%;
+    position: absolute;
+    top: 700px;
+    right: 120px;
+    width: 85%;
+
+}
+
+.text-S2{
+    padding-right: 20%;
+}
+.text-S2 h2{
+    font-size: 50px;
+    color: #d9b70b;
+}
+.text-S2 a{
+    color: black;
+    font-weight: 900;
+}
+
+
+/*Seccion 3*/
+
+.S3{
+    display: flex;
+    background-color: #F5CB00;
+    padding: 5%;
+    padding-top: 20%;
+}
+
+.text-S3 h2{
+    font-size: 60px;
+}
+
+/*Seccion 4*/
+
+.S4{
+    display: flex;
+}
+
+/*Seccion 5*/
+
+.S5{
+    text-align: center;
+}
+
+/*Seccion 6*/
+
+.S6{
+    display: flex;
+}
+
+/*Seccion 7*/
+
+.S7{
+    display: flex;
+}
+
+/*Seccion 8*/
+
+.S8{
+    display: flex;
+}
+
+/*Seccion 9*/
+
+.S9{
+    text-align: center;
+}
+
+/*Footer*/
+
+footer{
+    background-color: black;
+    color: #F5CB00;
+    padding: 3%;
+    
+}
+
+.footer-list{
+    display: flex;
+    gap: 30px;
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+.footer-list li{
+    line-height: 1.2;
+}
+
+.footer-end{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+}
