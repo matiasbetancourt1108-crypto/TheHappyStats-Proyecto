@@ -3,14 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../assets/fonts/BebasNeue-Regular.ttf);
+}
 
 body {
-    font-family: ;
+    font-family: 'BebasNeue';
 }
 
 a {
     text-decoration: none;
     font-weight: 900;
+    font-family: sans-serif;
 }
 
 ul {
@@ -26,6 +31,16 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+h1, h2, h3{
+    font-weight: normal;
+}
+p{
+    font-family: sans-serif
+}
+label{
+    font-family: sans-serif;
 }
 
 
@@ -51,13 +66,16 @@ header {
 
 /*Seccion 1*/
 
+.S1-2box{
+    position: relative;
+    padding-bottom: 200px;
+}
 
 .S1 {
     display: flex;
     align-items: center;
     gap: 4%;
     padding: 4%;
-    padding-bottom: 20%;
 }
 
 h1 {
@@ -87,18 +105,24 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: absolute;
     gap: 90px;
     background-color: #E6E6E6;
     padding: 4%;
-    position: absolute;
-    top: 700px;
-    right: 120px;
-    width: 85%;
+
+    width: 80%;
+    bottom: 0;
+    left: 50%;
+
+    transform: translate(-50%, 50%);
+    z-index: 10;
 
 }
 
 .text-S2 {
-    padding-right: 20%;
+    padding-right: 10%;
+    width: 60%;
 }
 
 .text-S2 h2 {
@@ -110,6 +134,12 @@ h1 {
     color: black;
     font-weight: 900;
 }
+.img-S2-1, .img-S2-2{
+    width: 20%;
+}
+.img-S2-1 img, .img-S2-2 img{
+    width: 100%;
+}
 
 
 /*Seccion 3*/
@@ -118,7 +148,7 @@ h1 {
     display: flex;
     background-color: #F5CB00;
     padding: 5%;
-    padding-top: 20%;
+    padding-top: 300px;
 }
 
 .text-S3 h2 {
@@ -299,6 +329,12 @@ h1 {
 .S9 button{
     background-color: black;
     color: white;
+}
+.img-S9{
+    padding: 0 4%;
+}
+.img-S9 img{
+    width: 100%;
 }
 
 /*Footer*/
