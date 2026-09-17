@@ -4,41 +4,47 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Bebas Neue', sans-serif;
+body {
+    font-family: ;
 }
 
-a{
+a {
     text-decoration: none;
+    font-weight: 900;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-button{
+button {
     height: 35px;
     width: 120px;
     border: none;
     font-weight: 900;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 
 /*HEADER*/
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3%;
+    padding: 0.5% 3%;
     background-color: #F5CB00;
 }
 
-.nav{
+.nav {
     display: flex;
     gap: 20px;
 }
-.nav a{
+
+.nav a {
     color: black;
 }
 
@@ -46,23 +52,30 @@ header{
 /*Seccion 1*/
 
 
-.S1{
+.S1 {
     display: flex;
     align-items: center;
-    gap: 9%;
+    gap: 4%;
     padding: 4%;
     padding-bottom: 20%;
 }
 
-h1{
+h1 {
     font-size: 60px;
 }
 
-.text-S1{
+.text-S1 {
     padding-right: 10%;
+    width: 50%;
+}
+.img-S1{
+    width: 50%;
+}
+.img-S1 img{
+    width: 100%;
 }
 
-.S1 button{
+.S1 button {
     background-color: #F5CB00;
 }
 
@@ -70,7 +83,7 @@ h1{
 
 /*Seccion 2*/
 
-.S2{
+.S2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,14 +97,16 @@ h1{
 
 }
 
-.text-S2{
+.text-S2 {
     padding-right: 20%;
 }
-.text-S2 h2{
+
+.text-S2 h2 {
     font-size: 50px;
-    color: #d9b70b;
+    color: #F5CB00;
 }
-.text-S2 a{
+
+.text-S2 a {
     color: black;
     font-weight: 900;
 }
@@ -99,80 +114,220 @@ h1{
 
 /*Seccion 3*/
 
-.S3{
+.S3 {
     display: flex;
     background-color: #F5CB00;
     padding: 5%;
     padding-top: 20%;
 }
 
-.text-S3 h2{
+.text-S3 h2 {
     font-size: 60px;
 }
 
 /*Seccion 4*/
 
-.S4{
-    display: flex;
+.S4 {
+    padding: 5% 7%;
 }
 
+.S4-box {
+    display: flex;
+    background-color: #E6E6E6;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.308);
+}
+
+.text-S4 {
+    padding: 4%;
+    width: 50%;
+}
+.img-S4{
+    width: 50%;
+}
+.img-S4 img{
+    width: 100%;
+}
+
+.text-S4 h2{
+    font-size: 50px;
+    color: #F5CB00;
+}
+.text-S4 button{
+    color: white;
+    background-color: black;
+}
+.text-S4 p{
+    padding-right: 30%;
+}
+.img-S4-2{
+    text-align: right;
+}
 /*Seccion 5*/
 
-.S5{
+.S5 {
     text-align: center;
+    background-color: black;
+    color: white;
+    padding: 4% 7%;
+}
+.S5 h3{
+    color: #F5CB00;
+    font-size: 25px;
+}
+.text-S5{
+    padding: 0 24%;
+    color: #c2c2c2;
+}
+.S5 button{
+    background-color: #F5CB00;
 }
 
 /*Seccion 6*/
 
-.S6{
+.S6 {
     display: flex;
+    align-items: center;
+    gap: 5%;
+    padding: 7% 5%;
+}
+.text-S6{
+    width: 50%;
+}
+.img-S6{
+    width: 50%;
+}
+.img-S6 img{
+    width: 100%;
+}
+.text-S6 h3{
+    font-size: 40px;
+}
+
+.text-S6 button{
+    background-color: #F5CB00;
 }
 
 /*Seccion 7*/
 
-.S7{
+.S7 {
     display: flex;
+    align-items: center;
+    gap: 2%;
+
+    background-color: #E6E6E6;
+    padding: 7% 4%;
+}
+.text-S7{
+    padding: 4%;
+    width: 50%;
+}
+.img-S7{
+    width: 50%;
+}
+.img-S7 img{
+    width: 100%;
+}
+.text-S7 h2{
+    font-size: 50px;
+}
+.text-S7 button{
+    background-color: #F5CB00;
 }
 
 /*Seccion 8*/
 
-.S8{
+.S8 {
     display: flex;
+    align-items: center;
+    gap: 6%;
+
+    padding: 8% 7%;
+}
+
+.form{
+    background-color: black;
+    color: white;
+    padding: 5% 4%;
+    width: 50%;
+}
+.form input{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.form textarea{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.form-NS{
+    display: flex;
+    gap: 3%;
+}
+.form-NS div{
+    width: 50%;
+}
+
+.text-S8{
+    width: 50%;
+}
+.text-S8 h2{
+    font-size: 40px;
+    color: #F5CB00;
+}
+.text-S8 button{
+    background-color: black;
+    color: white;
+    width: 25%;
 }
 
 /*Seccion 9*/
 
-.S9{
+.S9 {
     text-align: center;
+    padding: 3% 5%;
+
+    background-color: #F5CB00;
+}
+.S9 h2{
+    font-size: 30px;
+}
+.S9 button{
+    background-color: black;
+    color: white;
 }
 
 /*Footer*/
 
-footer{
+footer {
     background-color: black;
     color: #F5CB00;
     padding: 3%;
-    
+
 }
 
-.footer-list{
+.footer-list {
     display: flex;
     gap: 30px;
     padding-top: 5%;
     padding-bottom: 8%;
 }
 
-.footer-list li{
+.footer-list li {
     line-height: 1.2;
 }
 
-.footer-end{
+.footer-end {
     display: flex;
     justify-content: space-between;
     padding-top: 2%;
 }
 
-.redes{
+.redes {
     display: flex;
     gap: 20px;
 }
