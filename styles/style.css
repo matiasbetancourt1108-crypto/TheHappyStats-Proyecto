@@ -201,9 +201,11 @@ h1 {
 }
 .img-S4{
     width: 50%;
+    height: stretch;
 }
 .img-S4 img{
     width: 100%;
+    height: stretch;
 }
 
 .text-S4 h2{
@@ -436,11 +438,13 @@ footer {
 
     .S1,
     .S6,
-    .S7,
     .S8 {
         flex-direction: column-reverse;
         gap: 25px;
         padding: 35px 6%;
+    }
+    .S7{
+        flex-direction: column;
     }
 
     .img-S1,
@@ -650,13 +654,14 @@ footer {
 
     .S1,
     .S6,
-    .S7,
     .S8 {
         flex-direction: column-reverse;
         gap: 30px;
         padding: 45px 7%;
     }
-
+    .S7{
+        flex-direction: column;
+    }
     .img-S1,
     .text-S1,
     .text-S6,
@@ -1057,6 +1062,6 @@ footer {
     .img-S6 img,
     .img-S7 img,
     .img-S9 img {
-        height: auto;
+        height: 100%;
     }
 }
