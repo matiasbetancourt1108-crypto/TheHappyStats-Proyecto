@@ -21,12 +21,16 @@ a {
 ul {
     list-style: none;
 }
+li{
+    font-family: sans-serif;
+}
 
 button {
-    height: 35px;
-    width: 120px;
+    height: 50px;
+    width: 180px;
+    font-size: 18px;
     border: none;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 button:hover {
@@ -37,7 +41,8 @@ h1, h2, h3{
     font-weight: normal;
 }
 p{
-    font-family: sans-serif
+    font-family: sans-serif;
+    font-size: 20px;
 }
 label{
     font-family: sans-serif;
@@ -68,18 +73,19 @@ header {
 
 .S1-2box{
     position: relative;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
 }
 
 .S1 {
     display: flex;
     align-items: center;
-    gap: 4%;
+    gap: 8%;
     padding: 4%;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 90px;
+    line-height: 0.8;
 }
 
 .text-S1 {
@@ -109,7 +115,7 @@ h1 {
     position: absolute;
     gap: 90px;
     background-color: #E6E6E6;
-    padding: 4%;
+    padding: 5% 4%;
 
     width: 80%;
     bottom: 0;
@@ -117,6 +123,8 @@ h1 {
 
     transform: translate(-50%, 50%);
     z-index: 10;
+
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.308);
 
 }
 
@@ -126,7 +134,8 @@ h1 {
 }
 
 .text-S2 h2 {
-    font-size: 50px;
+    font-size: 60px;
+    line-height: 0.9;
     color: #F5CB00;
 }
 
@@ -145,14 +154,33 @@ h1 {
 /*Seccion 3*/
 
 .S3 {
-    display: flex;
     background-color: #F5CB00;
-    padding: 5%;
-    padding-top: 300px;
+    padding: 7%;
+    padding-top: 360px;
+}
+.container-S3{
+    display: flex;
+    gap: 4%;
+}
+.text-S3{
+    width: 35%;
+    padding-top: 2%;
+}
+.text-S3 button{
+    background-color: black;
+    color: white;
+    margin-top: 7%;
 }
 
-.text-S3 h2 {
-    font-size: 60px;
+.title-S3 h2 {
+    font-size: 120px;
+    line-height: 0.9;
+}
+.img-S3{
+    width: 65%;
+}
+.img-S3 img{
+    width: 100%;
 }
 
 /*Seccion 4*/
@@ -168,7 +196,7 @@ h1 {
 }
 
 .text-S4 {
-    padding: 4%;
+    padding: 2% 4%;
     width: 50%;
 }
 .img-S4{
@@ -179,7 +207,7 @@ h1 {
 }
 
 .text-S4 h2{
-    font-size: 50px;
+    font-size: 100px;
     color: #F5CB00;
 }
 .text-S4 button{
@@ -191,6 +219,10 @@ h1 {
 }
 .img-S4-2{
     text-align: right;
+    margin-right: 4%;
+}
+.img-S4-2 img{
+    width: 55%;
 }
 /*Seccion 5*/
 
@@ -202,7 +234,7 @@ h1 {
 }
 .S5 h3{
     color: #F5CB00;
-    font-size: 25px;
+    font-size: 50px;
 }
 .text-S5{
     padding: 0 24%;
@@ -210,6 +242,12 @@ h1 {
 }
 .S5 button{
     background-color: #F5CB00;
+}
+.img-S5{
+    padding: 0 10%;
+}
+.img-S5 img{
+    width: 100%;
 }
 
 /*Seccion 6*/
@@ -221,20 +259,24 @@ h1 {
     padding: 7% 5%;
 }
 .text-S6{
-    width: 50%;
+    width: 40%;
 }
 .img-S6{
-    width: 50%;
+    width: 60%;
 }
 .img-S6 img{
     width: 100%;
 }
 .text-S6 h3{
-    font-size: 40px;
+    font-size: 80px;
+}
+.text-S6 p{
+    padding-right: 30%;
 }
 
 .text-S6 button{
     background-color: #F5CB00;
+    margin-top: 3%;
 }
 
 /*Seccion 7*/
@@ -249,16 +291,17 @@ h1 {
 }
 .text-S7{
     padding: 4%;
-    width: 50%;
+    width: 47%;
 }
 .img-S7{
-    width: 50%;
+    width: 63%;
 }
 .img-S7 img{
     width: 100%;
 }
 .text-S7 h2{
-    font-size: 50px;
+    font-size: 100px;
+    line-height: 0.9;
 }
 .text-S7 button{
     background-color: #F5CB00;
@@ -306,7 +349,8 @@ h1 {
     width: 50%;
 }
 .text-S8 h2{
-    font-size: 40px;
+    font-size: 80px;
+    line-height: 0.9;
     color: #F5CB00;
 }
 .text-S8 button{
@@ -324,7 +368,7 @@ h1 {
     background-color: #F5CB00;
 }
 .S9 h2{
-    font-size: 30px;
+    font-size: 60px;
 }
 .S9 button{
     background-color: black;
@@ -366,4 +410,653 @@ footer {
 .redes {
     display: flex;
     gap: 20px;
+}
+
+@media screen and (min-width: 352px) and (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 12px;
+    }
+
+    header img {
+        max-width: 150px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .S1-2box {
+        padding-bottom: 0;
+    }
+
+    .S1,
+    .S6,
+    .S7,
+    .S8 {
+        flex-direction: column-reverse;
+        gap: 25px;
+        padding: 35px 6%;
+    }
+
+    .img-S1,
+    .text-S1,
+    .text-S6,
+    .img-S6,
+    .text-S7,
+    .img-S7,
+    .text-S8 {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    h1 {
+        font-size: 43px;
+        line-height: 0.95;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .S2 {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        transform: none;
+        width: 90%;
+        margin: 0 auto;
+        padding: 25px 6%;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .text-S2 {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .text-S2 h2 {
+        font-size: 36px;
+    }
+
+    .img-S2-1,
+    .img-S2-2 {
+        width: 42%;
+    }
+
+    .S3 {
+        padding: 45px 6%;
+    }
+
+    .title-S3 h2 {
+        font-size: 43px;
+    }
+
+    .container-S3 {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .text-S3,
+    .img-S3 {
+        width: 100%;
+    }
+
+    .S4 {
+        padding: 35px 6%;
+    }
+
+    .S4-box {
+        flex-direction: column;
+    }
+
+    .text-S4,
+    .img-S4 {
+        width: 100%;
+    }
+
+    .text-S4 h2 {
+        font-size: 42px;
+    }
+
+    .text-S4 p {
+        padding-right: 0;
+    }
+
+    .img-S4-2 img {
+        width: 80%;
+    }
+
+    .S5 {
+        padding: 35px 6%;
+    }
+
+    .S5 h3 {
+        font-size: 36px;
+    }
+
+    .text-S5 {
+        padding: 0;
+    }
+
+    .img-S5 {
+        padding: 0;
+    }
+
+    .text-S6 h3 {
+        font-size: 42px;
+    }
+
+    .text-S6 p {
+        padding-right: 0;
+    }
+
+    .text-S7 h2 {
+        font-size: 43px;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .form-NS {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-NS div {
+        width: 100%;
+    }
+
+    .form textarea {
+        height: 130px;
+    }
+
+    .text-S8 h2 {
+        font-size: 40px;
+    }
+
+    .text-S8 button {
+        width: 50%;
+    }
+
+    .S9 {
+        padding: 35px 6%;
+    }
+
+    .S9 h2 {
+        font-size: 40px;
+    }
+
+    .img-S9 {
+        padding: 0;
+    }
+
+    footer {
+        padding: 25px 6%;
+    }
+
+    .footer-list {
+        gap: 25px;
+        padding: 25px 0;
+        flex-wrap: wrap;
+    }
+
+    .footer-end {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-end p {
+        font-size: 13px;
+    }
+
+    .redes {
+        flex-wrap: wrap;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    header {
+        padding: 15px 4%;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    header img {
+        max-width: 160px;
+    }
+
+    .nav {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .S1-2box {
+        padding-bottom: 0;
+    }
+
+    .S1,
+    .S6,
+    .S7,
+    .S8 {
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding: 45px 7%;
+    }
+
+    .img-S1,
+    .text-S1,
+    .text-S6,
+    .img-S6,
+    .text-S7,
+    .img-S7,
+    .text-S8 {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .S2 {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        transform: none;
+        width: 90%;
+        margin: 0 auto;
+        padding: 35px;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .text-S2 {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .text-S2 h2 {
+        font-size: 45px;
+    }
+
+    .img-S2-1,
+    .img-S2-2 {
+        width: 42%;
+    }
+
+    .S3 {
+        padding: 55px 7%;
+    }
+
+    .title-S3 h2 {
+        font-size: 60px;
+    }
+
+    .container-S3 {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .text-S3,
+    .img-S3 {
+        width: 100%;
+    }
+
+    .S4 {
+        padding: 45px 7%;
+    }
+
+    .S4-box {
+        flex-direction: column;
+    }
+
+    .text-S4,
+    .img-S4 {
+        width: 100%;
+    }
+
+    .text-S4 h2 {
+        font-size: 60px;
+    }
+
+    .text-S4 p {
+        padding-right: 0;
+    }
+
+    .img-S4-2 img {
+        width: 65%;
+    }
+
+    .S5 {
+        padding: 45px 7%;
+    }
+
+    .S5 h3 {
+        font-size: 42px;
+    }
+
+    .text-S5 {
+        padding: 0 5%;
+    }
+
+    .img-S5 {
+        padding: 0;
+    }
+
+    .text-S6 h3 {
+        font-size: 55px;
+    }
+
+    .text-S6 p {
+        padding-right: 0;
+    }
+
+    .text-S7 h2 {
+        font-size: 60px;
+    }
+    .form{
+        width: 100%;
+    }
+
+    .form-NS {
+        gap: 12px;
+    }
+
+    .form-NS div {
+        min-width: 0;
+    }
+
+    .text-S8 h2 {
+        font-size: 55px;
+    }
+
+    .text-S8 button {
+        width: 40%;
+    }
+
+    .S9 {
+        padding: 45px 7%;
+    }
+
+    .S9 h2 {
+        font-size: 48px;
+    }
+
+    .img-S9 {
+        padding: 0;
+    }
+
+    footer {
+        padding: 30px 5%;
+    }
+
+    .footer-list {
+        gap: 35px;
+        padding: 30px 0;
+    }
+
+    .footer-end {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 920px) {
+
+    header {
+        padding: 15px 3%;
+    }
+
+    .nav {
+        gap: 12px;
+    }
+
+    .S1 {
+        gap: 5%;
+        padding: 4%;
+    }
+
+    h1 {
+        font-size: 58px;
+    }
+
+    .text-S1 {
+        padding-right: 0;
+    }
+
+    .S1-2box {
+        padding-bottom: 0;
+    }
+
+    .S2 {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        transform: none;
+        width: 90%;
+        margin: 0 auto;
+        padding: 35px 4%;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .text-S2 {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .text-S2 h2 {
+        font-size: 48px;
+    }
+
+    .img-S2-1,
+    .img-S2-2 {
+        width: 42%;
+    }
+
+    .S3 {
+        padding: 65px 6%;
+    }
+
+    .title-S3 h2 {
+        font-size: 70px;
+    }
+
+    .container-S3 {
+        gap: 5%;
+    }
+
+    .text-S3 {
+        width: 40%;
+    }
+
+    .img-S3 {
+        width: 60%;
+    }
+
+    .S4 {
+        padding: 5%;
+    }
+
+    .text-S4 {
+        padding: 3%;
+    }
+
+    .text-S4 h2 {
+        font-size: 55px;
+    }
+
+    .text-S4 p {
+        padding-right: 0;
+    }
+
+    .S5 h3 {
+        font-size: 45px;
+    }
+
+    .text-S5 {
+        padding: 0 10%;
+    }
+
+    .text-S6 h3 {
+        font-size: 55px;
+    }
+
+    .text-S6 p {
+        padding-right: 0;
+    }
+
+    .text-S7 {
+        padding: 2%;
+        width: 50%;
+    }
+
+    .img-S7 {
+        width: 50%;
+    }
+
+    .text-S7 h2 {
+        font-size: 55px;
+    }
+
+    .S8 {
+        gap: 4%;
+        padding: 6% 5%;
+    }
+
+    .form,
+    .text-S8 {
+        width: 50%;
+    }
+
+    .text-S8 h2 {
+        font-size: 52px;
+    }
+
+    .text-S8 button {
+        width: 45%;
+    }
+
+    .S9 h2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 921px) and (max-width: 1279px) {
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .text-S1 {
+        padding-right: 0;
+    }
+
+    .S1 {
+        gap: 5%;
+    }
+
+    .S2 {
+        width: 90%;
+        gap: 3%;
+        padding: 4%;
+    }
+
+    .text-S2 {
+        width: 45%;
+        padding-right: 0;
+    }
+
+    .text-S2 h2 {
+        font-size: 48px;
+    }
+
+    .img-S2-1,
+    .img-S2-2 {
+        width: 22%;
+    }
+
+    .S3 {
+        padding: 7%;
+        padding-top: 300px;
+    }
+
+    .title-S3 h2 {
+        font-size: 90px;
+    }
+
+    .text-S4 h2 {
+        font-size: 75px;
+    }
+
+    .text-S4 p {
+        padding-right: 0;
+    }
+
+    .S5 h3 {
+        font-size: 48px;
+    }
+
+    .text-S5 {
+        padding: 0 15%;
+    }
+
+    .text-S6 h3 {
+        font-size: 65px;
+    }
+
+    .text-S6 p {
+        padding-right: 0;
+    }
+
+    .text-S7 {
+        padding: 2%;
+    }
+
+    .text-S7 h2 {
+        font-size: 75px;
+    }
+
+    .text-S8 h2 {
+        font-size: 65px;
+    }
+
+    .text-S8 button {
+        width: 40%;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    .img-S1 img,
+    .img-S2-1 img,
+    .img-S2-2 img,
+    .img-S3 img,
+    .img-S4 img,
+    .img-S5 img,
+    .img-S6 img,
+    .img-S7 img,
+    .img-S9 img {
+        height: auto;
+    }
 }
